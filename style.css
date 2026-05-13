@@ -1,0 +1,39 @@
+body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f1f5f9; overflow: hidden; }
+.app-container { display: flex; height: 100vh; width: 100vw; }
+
+/* Layout Structure */
+.sidebar-tools { width: 320px; background: white; border-right: 1px solid #e2e8f0; display: flex; flex-direction: column; z-index: 30; }
+.thumbnail-rail { width: 180px; background: #f8fafc; border-right: 1px solid #e2e8f0; overflow-y: auto; padding: 1rem; }
+.main-viewport { flex: 1; overflow-y: auto; padding: 2rem; scroll-behavior: smooth; background: #cbd5e1; }
+
+#signaturePad { width: 100%; height: 160px; background: #fdfdfd; border-radius: 8px; cursor: crosshair; touch-action: none; border: 1px solid #e2e8f0; }
+
+.thumb-item {
+  background: white; border: 2px solid transparent; border-radius: 8px; margin-bottom: 1rem;
+  padding: 4px; cursor: pointer; transition: all 0.2s; position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.thumb-item.active { border-color: #6366f1; box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1); }
+.thumb-item:hover { transform: translateY(-2px); }
+.thumb-number { position: absolute; bottom: 4px; right: 8px; font-size: 10px; font-weight: bold; color: #94a3b8; }
+
+.page-large-container {
+  background: white; margin: 0 auto 3rem auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  border-radius: 4px; position: relative; width: fit-content; min-width: 200px;
+}
+
+/* Overlay Signature Style */
+.signature-overlay {
+  position: absolute; cursor: move; border: 2px dashed #6366f1;
+  background: rgba(99, 102, 241, 0.05); touch-action: none; z-index: 50;
+}
+.resize-handle {
+  position: absolute; width: 16px; height: 16px; background: #6366f1;
+  bottom: -8px; right: -8px; border-radius: 50%; cursor: nwse-resize;
+  border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.loading-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.9);
+  z-index: 9999; backdrop-filter: blur(8px); align-items: center; justify-content: center; color: white;
+}
