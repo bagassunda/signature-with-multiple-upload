@@ -3,9 +3,6 @@
 **Editor PDF & Gambar dengan Tanda Tangan Digital**  
 Aplikasi web ringan, cepat, dan **100% client-side** (tanpa server) untuk menambahkan tanda tangan ke PDF atau gambar dengan mudah.
 
-![Demo](https://via.placeholder.com/800x420/6366f1/ffffff?text=Demo+PDF+Editor+Pro)  
-*(ganti dengan screenshot atau GIF demo setelah kamu upload)*
-
 ## ✨ Fitur Utama
 
 - Upload **PDF multi-halaman** atau gambar (JPG/PNG)
